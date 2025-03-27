@@ -9,8 +9,14 @@ body {
 }
 
 .header-wrapper {
-      display: flex;
-      padding: 20px 10px;
+    // border: 1px solid blue;
+    display: flex;
+    padding: 20px 10px;
+
+    .menu-btn {
+        width: 30px;
+        // cursor: pointer;
+    }
 
     .header-container {
         display: flex;
@@ -25,5 +31,68 @@ body {
 
     .cart-icon {
         width: 10%;
+        max-width: 40px;
+        max-height: 40px;
+        margin-left: auto;
+    }
+
+    .nav-container {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+
+
+        .nav-inner {
+            display: block;
+            position: absolute;
+            left: -1000px;
+            top: 0;
+            bottom: 0;
+
+
+
+            .nav-link {
+                display: block;
+                text-decoration: none;
+                font-size: 20px;
+                margin-top: 30px;
+                color: #333333;
+                font-weight: bold;
+
+            }
+        }
+
+        .close-btn {
+            display: block;
+            width: 30px;
+            position: fixed;
+            z-index: 10;
+            margin-top: 10px;
+            margin-left: 10px;
+            // cursor: pointer;
+        }
+
+        &.isOpen {
+            display: flex;
+
+            .nav-inner {
+                background-color: #fff;
+                width: 60%;
+                height: 100vh;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                padding: 20px;
+                text-align: center;
+            }
+
+
+        }
     }
 }
