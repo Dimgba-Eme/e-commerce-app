@@ -3,6 +3,8 @@ import React from 'react'
 import Logo from '../assets/icons/logo.png'
 import cart_icon from '../assets/icons/cart_icon.png'
 import menu_btn from '../assets/icons/hamburger_menu.svg'
+// import NavBar from '../components/NavBar'
+
 
 
 function Header() {
@@ -16,6 +18,7 @@ function Header() {
                     <h4>Dimmy's Store</h4>
                 </div>
                 <img src={cart_icon} alt='cart icon' className='cart-icon' />
+                {/* <NavBar /> */}
             </header>
 
         </>
