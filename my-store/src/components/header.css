@@ -32,13 +32,7 @@ body {
 }
 .header-wrapper .nav-container {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
   z-index: 1;
 }
 .header-wrapper .nav-container .nav-inner {
@@ -47,6 +41,7 @@ body {
   left: -1000px;
   top: 0;
   bottom: 0;
+  animation: fadeIn 0.8s;
 }
 .header-wrapper .nav-container .nav-inner .nav-link {
   display: block;
@@ -57,15 +52,21 @@ body {
   font-weight: bold;
 }
 .header-wrapper .nav-container .close-btn {
-  display: block;
+  display: none;
   width: 30px;
-  position: fixed;
+  position: absolute;
   z-index: 10;
-  margin-top: 10px;
-  margin-left: 10px;
+  top: 10px;
+  left: -1000px;
 }
 .header-wrapper .nav-container.isOpen {
   display: flex;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .header-wrapper .nav-container.isOpen .nav-inner {
   background-color: #fff;
@@ -76,4 +77,18 @@ body {
   bottom: 0;
   padding: 20px;
   text-align: center;
+}
+.header-wrapper .nav-container.isOpen .close-btn {
+  display: block;
+  top: 10px;
+  left: 10px;
+  animation: fadeIn 0.8s;
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(1px);
+  }
 }/*# sourceMappingURL=header.css.map */
