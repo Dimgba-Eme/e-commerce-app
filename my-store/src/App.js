@@ -8,11 +8,16 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import LoginSignup from './pages/LoginSignup'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
     <>
+
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Products />} />
@@ -21,6 +26,8 @@ function App() {
         <Route path="cart" element={<Cart />} />
         <Route path="login-signup" element={<LoginSignup />} />
       </Routes>
+
+      <Footer />
 
     </>
   );
