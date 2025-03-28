@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu-btn {
+  width: 30px;
+  margin-right: auto;
+  position: absolute;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    animation: fadeIn 0.5s;
+  }
+  nav .nav-inner {
+    display: block;
+    position: relative;
+    padding: 20px;
+    left: -1000px;
+    top: 0;
+    text-align: center;
+    width: 60%;
+    background-color: #fff;
+    height: 100vh;
+    text-align: center;
+    animation: slideIn 0.8s;
+  }
+  nav .nav-inner .close-btn {
+    display: block;
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+  }
+  nav .nav-inner .nav-link {
+    display: block;
+    font-size: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+  }
+  nav.isOpen {
+    display: flex;
+  }
+  nav.isOpen .nav-inner {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=navBar.css.map */
