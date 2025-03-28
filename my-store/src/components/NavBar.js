@@ -16,7 +16,7 @@ function NavBar() {
 
 
             <nav className={isOpen ? 'isOpen' : ''} onClick={() => {setIsOpen(!isOpen) }}>
-                <ul className='nav-inner'>
+                <ul className='nav-inner' onClick={() => setIsOpen(isOpen)}>
                 <img src={close_btn} alt='' onClick={() => { setIsOpen(!isOpen)}} className='close-btn' />
                     <NavLink className='nav-link'>Home</NavLink>
                     <NavLink className='nav-link'>Products</NavLink>

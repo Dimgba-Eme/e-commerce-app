@@ -16,6 +16,7 @@ function Header() {
         
                     <NavBar />
             </header>
+            <hr />
 
         </>
     )
