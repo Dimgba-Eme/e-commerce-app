@@ -50,3 +50,32 @@
         }
     }
 }
+
+    .best-sellers-data-wrapper {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        
+        .best-sellers-data {
+            img {
+                width: 100%;
+            }
+
+            h4 {
+                padding: 10px 0; 
+            }
+
+            p {
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            grid-template-columns: repeat(5, auto);
+            padding: 40px 0;
+        }
+
+    }
+

@@ -42,4 +42,27 @@
     margin-left: 470px;
     margin-right: 470px;
   }
+}
+
+.best-sellers-data-wrapper {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+.best-sellers-data-wrapper .best-sellers-data img {
+  width: 100%;
+}
+.best-sellers-data-wrapper .best-sellers-data h4 {
+  padding: 10px 0;
+}
+.best-sellers-data-wrapper .best-sellers-data p {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 800px) {
+  .best-sellers-data-wrapper {
+    grid-template-columns: repeat(5, auto);
+    padding: 40px 0;
+  }
 }/*# sourceMappingURL=bestSellers.css.map */
