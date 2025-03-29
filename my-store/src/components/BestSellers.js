@@ -12,7 +12,7 @@ function BestSellers() {
             <hr />
         </div>
         <div>
-
+           {best_sellers}
         </div>
       </section>
     </>
