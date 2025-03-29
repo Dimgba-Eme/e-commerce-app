@@ -13,8 +13,8 @@ function Header() {
                     <img src={Logo} alt='Logo' className='logo' />
                     <h4>Dimmy's Store</h4>
                 </div>
-        
-                    <NavBar />
+
+                <NavBar />
             </header>
             <hr />
 
