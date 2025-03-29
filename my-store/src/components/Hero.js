@@ -18,7 +18,7 @@ function Hero() {
                         <img src={HeroImage} className='hero-image' />
                     </div>
                 </div>
-                <button>SHOP NOW</button>
+                <button className='cta-btn'>SHOP NOW</button>
             </section>
         </>
     )

@@ -2,4 +2,44 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.hero-container {
+  padding: 20px 10px;
+}
+.hero-container .hero-inner .hero-offer {
+  padding: 10px 0;
+  text-align: center;
+}
+.hero-container .hero-inner .hero-image-container .hero-image {
+  width: 100%;
+  padding: 20px 0;
+}
+.hero-container .cta-btn {
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: tomato;
+  border: 0;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 800px) {
+  .hero-container {
+    padding: 20px 50px;
+  }
+  .hero-container .hero-inner {
+    display: flex;
+  }
+  .hero-container .hero-inner .hero-offer {
+    margin-top: 300px;
+  }
+  .hero-container .hero-inner .hero-image-container {
+    margin-left: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .hero-container .hero-inner .hero-image-container .hero-image {
+    width: 100%;
+    padding: 20px 0;
+  }
 }/*# sourceMappingURL=hero.css.map */
