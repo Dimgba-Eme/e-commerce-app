@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.new-collections-container {
+    .new-collections-title {
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border: 2px solid #333333;
+            margin-left: 120px;
+            margin-right: 120px;
+        }
+    }
+
+    .new-collections-data-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
