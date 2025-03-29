@@ -18,7 +18,10 @@ function Hero() {
                         <img src={HeroImage} className='hero-image' />
                     </div>
                 </div>
+                <div className='btn-container'>
                 <button className='cta-btn'>SHOP NOW</button>
+                </div>
+
             </section>
         </>
     )
