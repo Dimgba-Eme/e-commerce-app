@@ -4,3 +4,32 @@
     box-sizing: border-box;
 }
 
+.newsletter-container {
+    border: 1px solid red;
+    padding: 20px 10px;
+    .title-container {
+        text-align: center;
+        h1 {
+font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 10px 0;
+        }
+    }
+
+    .input-container {
+        text-align: center;
+        input {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333333;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
