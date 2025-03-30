@@ -5,77 +5,79 @@
 }
 
 .best-sellers-container {
-    padding:20px 10px;
+    padding: 20px 10px;
+
     .best-sellers-title {
+        margin: 20px 0;
+
         h1 {
             text-align: center;
         }
 
         hr {
             border: 2px solid #333333;
-           margin-left: 120px;
-           margin-right: 120px;
+            margin-left: 120px;
+            margin-right: 120px;
         }
     }
 
     @media only screen and (min-width: 800px) {
         padding: 20px 50px;
+
         .best-sellers-title {
             h1 {
                 font-size: 30px;
-                margin: 20px 0;
             }
 
             hr {
                 border: 2px solid #333333;
-               margin-left: 300px;
-               margin-right: 300px;
+                margin-left: 300px;
+                margin-right: 300px;
             }
         }
     }
 
     @media only screen and (min-width: 1000px) {
         padding: 20px 100px;
+
         .best-sellers-title {
             h1 {
                 font-size: 40px;
-                margin: 20px 0;
             }
 
             hr {
                 border: 2px solid #333333;
-               margin-left: 470px;
-               margin-right: 470px;
+                margin-left: 470px;
+                margin-right: 470px;
             }
         }
     }
 }
 
-    .best-sellers-data-wrapper {
-        padding: 20px 0;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 10px;
-        
-        .best-sellers-data {
-            img {
-                width: 100%;
-            }
+.best-sellers-data-wrapper {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
 
-            h4 {
-                padding: 10px 0; 
-            }
-
-            p {
-                font-weight: bold;
-                padding-bottom: 10px;
-            }
+    .best-sellers-data {
+        img {
+            width: 100%;
         }
 
-        @media only screen and (min-width: 800px) {
-            grid-template-columns: repeat(5, auto);
-            padding: 40px 0;
+        h4 {
+            padding: 10px 0;
         }
 
+        p {
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
     }
 
+    @media only screen and (min-width: 800px) {
+        grid-template-columns: repeat(5, auto);
+        padding: 40px 0;
+    }
+
+}

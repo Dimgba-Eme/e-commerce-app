@@ -7,6 +7,9 @@
 .best-sellers-container {
   padding: 20px 10px;
 }
+.best-sellers-container .best-sellers-title {
+  margin: 20px 0;
+}
 .best-sellers-container .best-sellers-title h1 {
   text-align: center;
 }
@@ -21,7 +24,6 @@
   }
   .best-sellers-container .best-sellers-title h1 {
     font-size: 30px;
-    margin: 20px 0;
   }
   .best-sellers-container .best-sellers-title hr {
     border: 2px solid #333333;
@@ -35,7 +37,6 @@
   }
   .best-sellers-container .best-sellers-title h1 {
     font-size: 40px;
-    margin: 20px 0;
   }
   .best-sellers-container .best-sellers-title hr {
     border: 2px solid #333333;
@@ -48,7 +49,7 @@
   padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 10px;
+  gap: 15px;
 }
 .best-sellers-data-wrapper .best-sellers-data img {
   width: 100%;

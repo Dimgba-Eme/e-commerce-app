@@ -1,6 +1,6 @@
 import image2 from '../images/image2.jpeg'
 import image61 from '../images/image61.jpeg'
-import image44 from '../images/image45.jpeg'
+import image44 from '../images/image44.jpeg'
 import image27 from '../images/image27.jpeg'
 import image77 from '../images/image77.jpeg'
 import image93 from '../images/image93.jpeg'

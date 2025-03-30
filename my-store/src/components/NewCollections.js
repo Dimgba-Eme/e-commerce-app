@@ -15,8 +15,10 @@ const NewCollections = () => {
                    {new_collections.map((item) => {
                     return (
                         <>
-                        <div>
-                            <img src={item.image} />
+                        <div key={item.id} className='new-collections-data'>
+                            <img src={item.image} alt='new collections products' />
+                            <h4>{item.name}</h4>
+                            <p>${item.new_price}</p>
                         </div>
                         </>
                     )
