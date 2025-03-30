@@ -63,6 +63,11 @@
     .best-sellers-data {
         img {
             width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                animation: scaler 0.5s;
+            }
         }
 
         h4 {
@@ -78,6 +83,16 @@
     @media only screen and (min-width: 800px) {
         grid-template-columns: repeat(5, auto);
         padding: 40px 0;
+    }
+
+    @keyframes scaler {
+        from {
+            transform: scale(100%);
+        }
+
+        to {
+            transform: scale(110%);
+        }
     }
 
 }

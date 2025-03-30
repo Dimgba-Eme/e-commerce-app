@@ -75,6 +75,11 @@
         .new-collections-data {
             img {
                 width: 100%;
+                cursor: pointer;
+
+                &:hover {
+                    animation: scaler 0.5s;
+                }
             }
 
             h4 {
@@ -92,5 +97,15 @@
             padding: 40px 0;
         }
 
+    }
+
+    @keyframes scaler {
+        from {
+            transform: scale(100%);
+        }
+
+        to {
+            transform: scale(110%);
+        }
     }
 }

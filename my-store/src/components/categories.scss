@@ -67,6 +67,7 @@
             img {
                 filter: brightness(0.5);
                 max-width: 150px;
+               
             }
 
             h1 {
@@ -91,12 +92,27 @@
                 img {
                     min-width: 150px;
                     max-width: 100%;
+                    cursor: pointer;
+
+                    &:hover {
+                        // filter: brightness(0.8);
+                        animation: scaling 15s;
+                    }
                 }
 
                 h1 {
                     transform: translate(30px, 70px);
                 }
             }
+        }
+    }
+
+    @keyframes scaling {
+        from {
+            transform: scale(80%);
+        }
+        to {
+            transform: scale(100%);
         }
     }
 }

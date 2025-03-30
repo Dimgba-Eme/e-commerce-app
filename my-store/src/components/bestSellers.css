@@ -53,6 +53,10 @@
 }
 .best-sellers-data-wrapper .best-sellers-data img {
   width: 100%;
+  cursor: pointer;
+}
+.best-sellers-data-wrapper .best-sellers-data img:hover {
+  animation: scaler 0.5s;
 }
 .best-sellers-data-wrapper .best-sellers-data h4 {
   padding: 10px 0;
@@ -65,5 +69,13 @@
   .best-sellers-data-wrapper {
     grid-template-columns: repeat(5, auto);
     padding: 40px 0;
+  }
+}
+@keyframes scaler {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(110%);
   }
 }/*# sourceMappingURL=bestSellers.css.map */
