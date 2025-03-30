@@ -18,29 +18,29 @@ const Categories = () => {
                 </div>
 
                 <div className='categories-inner'>
-                    <div>
+                    <div className='categories'>
+                        <h1>Hoodies</h1>
                         <img src={image4} alt='Hoodies image' />
-                        <span></span>
                     </div>
 
-                    <div>
+                    <div className='categories'>
+                        <h1>T-shirt</h1>
                         <img src={image38} alt='T-shirt image' />
-                        <span></span>
                     </div>
 
-                    <div>
+                    <div className='categories'>
+                        <h1>Headwear</h1>
                         <img src={image59} alt='Headwear image' />
-                        <span></span>
                     </div>
 
-                    <div>
+                    <div className='categories'>
+                        <h1>Footwear</h1>
                         <img src={image82} alt='Footwear image' />
-                        <span></span>
                     </div>
 
-                    <div>
+                    <div className='categories'>
+                        <h1>Accessories</h1>
                         <img src={image97} alt='Accessories image' />
-                        <span></span>
                     </div>
 
                 </div>
