@@ -12,6 +12,10 @@ const Products = () => {
         <Link to='/'>Footwear</Link>
         <Link to='/'>Accessories</Link>
       </div>
+
+      <div className='products-display-container'>
+
+      </div>
     </main>
   )
 }
