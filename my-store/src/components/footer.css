@@ -2,4 +2,82 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-wrapper {
+    background-color: #333333;
+    padding: 20px 10px;
+  }
+  .footer-wrapper .footer-container .footer-logo-container {
+    text-align: center;
+  }
+  .footer-wrapper .footer-container .footer-logo-container img {
+    width: 100px;
+  }
+  .footer-wrapper .footer-container .footer-menu-container {
+    text-align: center;
+  }
+  .footer-wrapper .footer-container .footer-menu-container h4 {
+    color: #fff;
+    margin-top: 20px;
+  }
+  .footer-wrapper .footer-container .footer-menu-container .footer-link {
+    padding-top: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-wrapper .footer-container .footer-contact-container {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+  }
+  .footer-wrapper .footer-container .footer-contact-container p {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .footer-wrapper {
+    background-color: #333333;
+    padding: 20px 50px;
+  }
+  .footer-wrapper .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-wrapper .footer-container .footer-logo-container {
+    text-align: center;
+  }
+  .footer-wrapper .footer-container .footer-logo-container img {
+    min-width: 100px;
+    width: 150px;
+  }
+  .footer-wrapper .footer-container .footer-menu-container {
+    text-align: center;
+  }
+  .footer-wrapper .footer-container .footer-menu-container h4 {
+    color: #fff;
+  }
+  .footer-wrapper .footer-container .footer-menu-container .footer-link {
+    padding-top: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-wrapper .footer-container .footer-contact-container {
+    text-align: center;
+    color: #fff;
+  }
+  .footer-wrapper .footer-container .footer-contact-container p {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .footer-wrapper {
+    background-color: #333333;
+    padding: 0 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }/*# sourceMappingURL=footer.css.map */
