@@ -12,17 +12,17 @@ const NewCollections = () => {
                 </div>
 
                 <div className='new-collections-data-container'>
-                   {new_collections.map((item) => {
-                    return (
-                        <>
-                        <div key={item.id} className='new-collections-data'>
-                            <img src={item.image} alt='new collections products' />
-                            <h4>{item.name}</h4>
-                            <p>${item.new_price}</p>
-                        </div>
-                        </>
-                    )
-                   })}
+                    {new_collections.map((item) => {
+                        return (
+
+                            <div key={item.id} className='new-collections-data'>
+                                <img src={item.image} alt='new collections products' />
+                                <h4>{item.name}</h4>
+                                <p>${item.new_price}</p>
+                            </div>
+
+                        )
+                    })}
                 </div>
             </section>
         </>

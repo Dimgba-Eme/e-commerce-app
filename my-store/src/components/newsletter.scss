@@ -5,12 +5,13 @@
 }
 
 .newsletter-container {
-    border: 1px solid red;
     padding: 20px 10px;
+
     .title-container {
         text-align: center;
+
         h1 {
-font-size: 20px;
+            font-size: 20px;
         }
 
         p {
@@ -21,8 +22,10 @@ font-size: 20px;
 
     .input-container {
         text-align: center;
+
         input {
             padding: 10px;
+            border-radius: 5px;
         }
 
         button {
@@ -30,6 +33,36 @@ font-size: 20px;
             background-color: #333333;
             color: #fff;
             font-weight: bold;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and (min-width: 800px) {
+        padding: 20px, 50px;
+
+        .title-container {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+                margin: 15px 0;
+            }
+        }
+
+        .input-container {
+            input {
+                padding: 15px;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            button {
+                padding: 15px;
+            }
         }
     }
 }

@@ -14,14 +14,14 @@ function BestSellers() {
                 <div className='best-sellers-data-wrapper'>
                     {best_sellers.map((items) => {
                         return (
-                            <>
 
-                                <div key={items.id} className='best-sellers-data'>
-                                    <img src={items.image} alt='Best sellers products' />
-                                    <h4>{items.name}</h4>
-                                    <p>${items.new_price}</p>
-                                </div>
-                            </>
+
+                            <div key={items.id} className='best-sellers-data'>
+                                <img src={items.image} alt='Best sellers products' />
+                                <h4>{items.name}</h4>
+                                <p>${items.new_price}</p>
+                            </div>
+
 
                         )
                     })}

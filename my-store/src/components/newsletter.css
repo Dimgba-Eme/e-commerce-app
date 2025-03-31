@@ -5,7 +5,6 @@
 }
 
 .newsletter-container {
-  border: 1px solid red;
   padding: 20px 10px;
 }
 .newsletter-container .title-container {
@@ -23,10 +22,34 @@
 }
 .newsletter-container .input-container input {
   padding: 10px;
+  border-radius: 5px;
 }
 .newsletter-container .input-container button {
   padding: 10px;
   background-color: #333333;
   color: #fff;
   font-weight: bold;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 800px) {
+  .newsletter-container {
+    padding: 20px, 50px;
+  }
+  .newsletter-container .title-container h1 {
+    font-size: 30px;
+  }
+  .newsletter-container .title-container p {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .newsletter-container .input-container input {
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+  }
+  .newsletter-container .input-container button {
+    padding: 15px;
+  }
 }/*# sourceMappingURL=newsletter.css.map */
