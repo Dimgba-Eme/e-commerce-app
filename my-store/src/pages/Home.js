@@ -7,15 +7,14 @@ import Categories from '../components/Categories'
 import Newsletter from '../components/Newsletter'
 const Home = () => {
     return (
-        <>
-            <main>
-                <Hero />
-                <NewCollections />
-                <BestSellers />
-                <Categories />
-                <Newsletter />
-            </main>
-        </>
+
+        <main>
+            <Hero />
+            <NewCollections />
+            <BestSellers />
+            <Categories />
+            <Newsletter />
+        </main>
     )
 }
 

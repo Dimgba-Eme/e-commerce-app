@@ -19,7 +19,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className='btn-container'>
-                <button className='cta-btn'>SHOP NOW</button>
+                    <button className='cta-btn'>SHOP NOW</button>
                 </div>
 
             </section>
