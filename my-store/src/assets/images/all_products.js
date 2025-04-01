@@ -1,14 +1,14 @@
-import image1 from '../images/image1.jpeg'
+
 
 
 let all_products = [
     {
         id: 1,
         name: 'Aaron Adkins Hoodie',
-        image: image1,
+        image: '',
         old_price: 70.00,
         new_price: 50.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ let all_products = [
         image: '',
         old_price: 120.50,
         new_price: 90.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ let all_products = [
         image: '',
         old_price: 130.00,
         new_price: 100.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ let all_products = [
         image: '',
         old_price: 70.00,
         new_price: 55.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 5,
@@ -40,7 +40,7 @@ let all_products = [
         image: '',
         old_price: 60.00,
         new_price: 40.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 6,
@@ -48,7 +48,7 @@ let all_products = [
         image: '',
         old_price: 70.00,
         new_price: 60.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 7,
@@ -56,7 +56,7 @@ let all_products = [
         image: '',
         old_price: 80.00,
         new_price: 60.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 8,
@@ -64,7 +64,7 @@ let all_products = [
         image: '',
         old_price: 90.00,
         new_price: 80.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 9,
@@ -72,7 +72,7 @@ let all_products = [
         image: '',
         old_price: 110.00,
         new_price: 100.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 10,
@@ -80,7 +80,7 @@ let all_products = [
         image: '',
         old_price: 90.00,
         new_price: 80.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 11,
@@ -88,23 +88,23 @@ let all_products = [
         image: '',
         old_price: 90.00,
         new_price: 70.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 12,
         name: 'Gesean Mens Novelty Hoodie',
         image: '',
-        old_price: '',
-        new_price: '',
-        category: '',
+        old_price: 120.00,
+        new_price: 110.00,
+        category: 'hoodies',
     },
     {
         id: 13,
         name: 'GURUNVANI Pullover Hoodie',
         image: '',
-        old_price: '',
-        new_price: '',
-        category: '',
+        old_price: 110.00,
+        new_price: 90.00,
+        category: 'hoodies',
     },
     {
         id: 14,
@@ -112,7 +112,7 @@ let all_products = [
         image: '',
         old_price: 90.00,
         new_price: 60.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 15,
@@ -120,7 +120,7 @@ let all_products = [
         image: '',
         old_price: 120.00,
         new_price: 110.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 16,
@@ -128,7 +128,7 @@ let all_products = [
         image: '',
         old_price: 90.00,
         new_price: 70.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 17,
@@ -136,7 +136,7 @@ let all_products = [
         image: '',
         old_price: 75.00,
         new_price: 55.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 18,
@@ -144,7 +144,7 @@ let all_products = [
         image: '',
         old_price: 90.00,
         new_price: 65.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 19,
@@ -152,7 +152,7 @@ let all_products = [
         image: '',
         old_price: 70.00,
         new_price: 55.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 20,
@@ -160,7 +160,7 @@ let all_products = [
         image: '',
         old_price: 190.00,
         new_price: 160.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 21,
@@ -168,7 +168,7 @@ let all_products = [
         image: '',
         old_price: 110.00,
         new_price: 90.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 22,
@@ -176,7 +176,7 @@ let all_products = [
         image: '',
         old_price: 100.00,
         new_price: 90.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 23,
@@ -184,7 +184,7 @@ let all_products = [
         image: '',
         old_price: 90.00,
         new_price: 70.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 24,
@@ -192,7 +192,7 @@ let all_products = [
         image: '',
         old_price: 170.00,
         new_price: 150.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 25,
@@ -200,7 +200,7 @@ let all_products = [
         image: '',
         old_price: 160.00,
         new_price: 150.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 26,
@@ -208,7 +208,7 @@ let all_products = [
         image: '',
         old_price: 130.00,
         new_price: 110.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 27,
@@ -216,7 +216,7 @@ let all_products = [
         image: '',
         old_price: 100.00,
         new_price: 80.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 28,
@@ -224,7 +224,7 @@ let all_products = [
         image: '',
         old_price: 140.00,
         new_price: 120.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 29,
@@ -232,7 +232,7 @@ let all_products = [
         image: '',
         old_price: 70.00,
         new_price: 50.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 30,
@@ -240,7 +240,7 @@ let all_products = [
         image: '',
         old_price: 150.00,
         new_price: 130.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 31,
@@ -248,7 +248,7 @@ let all_products = [
         image: '',
         old_price: 70.00,
         new_price: 40.00,
-        category: 'hoodie',
+        category: 'hoodies',
     },
     {
         id: 32,
