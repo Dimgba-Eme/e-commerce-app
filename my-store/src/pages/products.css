@@ -4,9 +4,25 @@
   box-sizing: border-box;
 }
 
-.products-tab {
-  display: flex;
+.products-container {
+  padding: 20px 10px;
 }
-.products-tab .products-tab-inner {
-  display: flex;
+.products-container h1 {
+  font-size: 20px;
+}
+@media only screen and (min-width: 800px) {
+  .products-container {
+    padding: 20px 50px;
+  }
+  .products-container h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .products-container {
+    padding: 20px 100px;
+  }
+  .products-container h1 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=products.css.map */
