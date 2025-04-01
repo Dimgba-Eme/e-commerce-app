@@ -1,21 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Outlet } from 'react-router-dom'
+import './products.scss'
+import ProductsTabs from '../components/ProductsTabs'
 
 const Products = () => {
   return (
     <main className='products-container'>
       <h1>Our Products</h1>
-      <div>
-        <Link to='/'>Hoodies</Link>
-        <Link to='/'>T-shirt</Link>
-        <Link to='/'>Headwear</Link>
-        <Link to='/'>Footwear</Link>
-        <Link to='/'>Accessories</Link>
-      </div>
+      <ProductsTabs />
 
-      <div className='products-display-container'>
+      
 
-      </div>
+      {/* <div className='products-display-container'>
+        <Outlet />
+      </div> */}
     </main>
   )
 }

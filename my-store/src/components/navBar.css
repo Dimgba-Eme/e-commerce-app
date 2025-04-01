@@ -11,7 +11,7 @@
     position: absolute;
     text-align: center;
   }
-  nav {
+  .nav-container nav {
     display: none;
     position: fixed;
     top: 0;
@@ -22,7 +22,7 @@
     z-index: 1;
     animation: fadeIn 0.5s;
   }
-  nav .nav-inner {
+  .nav-container nav .nav-inner {
     display: block;
     position: relative;
     padding: 20px;
@@ -35,14 +35,14 @@
     text-align: center;
     animation: slideIn 0.8s;
   }
-  nav .nav-inner .close-btn {
+  .nav-container nav .nav-inner .close-btn {
     display: block;
     position: absolute;
     width: 30px;
     top: 20px;
     left: 20px;
   }
-  nav .nav-inner .nav-link {
+  .nav-container nav .nav-inner .nav-link {
     display: block;
     font-size: 20px;
     margin-top: 30px;
@@ -50,10 +50,10 @@
     color: #333333;
     font-weight: bold;
   }
-  nav.isOpen {
+  .nav-container nav.isOpen {
     display: flex;
   }
-  nav.isOpen .nav-inner {
+  .nav-container nav.isOpen .nav-inner {
     left: 0;
     top: 0;
     bottom: 0;
@@ -85,25 +85,28 @@
   .menu-btn {
     display: none;
   }
-  nav {
-    padding: 20px;
+  .nav-container {
     margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-container nav {
+    padding: 20px;
     align-items: center;
   }
-  nav .nav-inner {
+  .nav-container nav .nav-inner {
     padding: 10px;
   }
-  nav .nav-inner .close-btn {
+  .nav-container nav .nav-inner .close-btn {
     display: none;
   }
-  nav .nav-inner .nav-link {
+  .nav-container nav .nav-inner .nav-link {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     color: #333333;
   }
-  nav .nav-inner .nav-link + .nav-link {
+  .nav-container nav .nav-inner .nav-link + .nav-link {
     margin-left: 20px;
   }
   .cart-icon {
