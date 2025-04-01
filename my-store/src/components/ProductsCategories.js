@@ -13,7 +13,7 @@ const ProductsCategories = (props) => {
                     if (props.category === item.category) {
                         return (
                             <div key={item.id}>
-                               <Items name={item.name} new_price ={'$' + item.new_price}/>
+                               <Items name={item.name} new_price ={item.new_price}/>
                             </div>
                         )
                     }else {

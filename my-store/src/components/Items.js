@@ -5,7 +5,7 @@ function Items(props) {
     <div>
       <img src={props.image} />
       <h4>{props.name}</h4>
-      <p>{props.new_price}</p>
+      <p>${props.new_price}</p>
       <p>{props.old_price}</p>
 
     </div>
