@@ -1,4 +1,5 @@
 import React from 'react'
+import { useProducts } from '../contexts/ContextProvider'
 
 const ProductsCategories = () => {
   return (
