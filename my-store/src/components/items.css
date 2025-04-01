@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.items-container .items-inner .items-image {
+  width: 100%;
+}
+.items-container .items-inner .items-new-price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.items-container .items-inner .items-old-price {
+  color: gray;
+  text-decoration: line-through;
+}/*# sourceMappingURL=items.css.map */

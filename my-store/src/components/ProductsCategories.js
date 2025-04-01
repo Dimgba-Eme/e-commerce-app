@@ -1,22 +1,19 @@
 import React from 'react'
 import { useProducts } from '../contexts/ContextProvider'
 import Items from './Items';
+import './productsCategory.scss'
 
 const ProductsCategories = (props) => {
 
     const { all_products } = useProducts();
     return (
-        <main>
-            <div>
+        <main className='products-category-wrapper'>
+            <div className='products-category-inner'>
 
                 {all_products.map((item) => {
                     if (props.category === item.category) {
-                        return (
-                            <div key={item.id}>
-                               <Items name={item.name} new_price ={item.new_price}/>
-                            </div>
-                        )
-                    }else {
+                        return <Items key={item.id} image={item.image} name={item.name} new_price={item.new_price} old_price={item.old_price} />
+                    } else {
                         return null;
                     }
                 })}
@@ -26,3 +23,7 @@ const ProductsCategories = (props) => {
 }
 
 export default ProductsCategories
+
+
+
+
