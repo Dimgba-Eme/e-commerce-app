@@ -5,9 +5,9 @@
 }
 
 .product-display-container {
-    border: 1px solid red;
 
     .product-display-inner {
+        padding-top: 20px;
 
         .product-image-container {
             img {
@@ -16,6 +16,8 @@
         }
 
         .product-info-container {
+            padding-top: 20px;
+
             .star-rating-container {
                 display: flex;
                 align-items: center;
@@ -67,6 +69,7 @@
 
             .add-to-cart-btn {
                 padding: 20px 0;
+
                 button {
                     padding: 10px;
                     width: 150px;
@@ -76,6 +79,13 @@
 
                 }
             }
+        }
+    }
+
+    @media only screen and (min-width:1000px) {
+        .product-display-inner {
+            display: flex;
+            gap: 50px;
         }
     }
 }

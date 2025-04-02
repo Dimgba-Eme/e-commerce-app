@@ -5,6 +5,28 @@
 }
 
 .single-item-container {
-  border: 1px solid blue;
   padding: 10px;
+}
+.single-item-container .product-path-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.single-item-container .product-path-container img {
+  width: 10px;
+}
+@media only screen and (min-width: 800px) {
+  .single-item-container {
+    padding: 20px 50px;
+  }
+  .single-item-container .product-path-container h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .single-item-container {
+    padding: 20px 100px;
+  }
+  .single-item-container .product-path-container h4 {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=singleItem.css.map */

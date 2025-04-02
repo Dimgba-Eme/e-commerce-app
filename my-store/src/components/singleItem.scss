@@ -6,6 +6,34 @@
 
 
 .single-item-container {
-    border: 1px solid blue;
     padding: 10px;
+
+    .product-path-container {
+        display: flex;
+        margin-bottom: 10px;
+
+        img {
+            width: 10px;
+        }
+    }
+
+    @media only screen and (min-width: 800px) {
+        padding: 20px 50px;
+
+        .product-path-container {
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        padding: 20px 100px;
+
+        .product-path-container {
+            h4 {
+                font-size: 25px;
+            }
+        }
+    }
 }
