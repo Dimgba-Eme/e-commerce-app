@@ -1,10 +1,11 @@
 import React from 'react'
 
-const ProductsDisplay = () => {
+const ProductsDisplay = (props) => {
+  const {product} = props;
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   )
 }
 

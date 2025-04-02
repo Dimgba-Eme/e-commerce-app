@@ -1,5 +1,4 @@
 import React from 'react'
-import all_products from '../assets/images/all_products'
 import { useParams } from 'react-router-dom'
 import ProductsDisplay from './ProductsDisplay'
 import { useProducts } from '../contexts/ContextProvider'
