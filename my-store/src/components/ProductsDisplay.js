@@ -3,7 +3,7 @@ import React from 'react'
 const ProductsDisplay = (props) => {
   const {product} = props;
   return (
-    <section>
+    <section className='products-display-container'>
       
     </section>
   )
