@@ -6,7 +6,7 @@ function Items(props) {
   return (
     <div className='items-container'>
       <div className='items-inner'>
-        <Link to={`/single-item/${props.id}`}> <img src={props.image} className='items-image' /></Link>
+        <Link to={`/single-item/${props.id}`}><img src={props.image} className='items-image' alt={props.name} /></Link>
         <h4 className='items-title'>{props.name}</h4>
         <p className='items-new-price'>${props.new_price}</p>
         <p className='items-old-price'>${props.old_price}</p>
