@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import ProductsCategories from "./components/ProductsCategories";
+import SingleItem from "./components/SingleItem";
 
 
 import Home from "./pages/Home";
@@ -27,6 +28,9 @@ function App() {
           <Route path="headwear" element={<ProductsCategories category='headwear' />} />
           <Route path="footwear" element={<ProductsCategories category='footwear' />} />
           <Route path="accessories" element={<ProductsCategories category='accessories' />} />
+        </Route>
+        <Route path="/single-item" element={<SingleItem />} >
+          <Route path=":productId" element={<SingleItem />} />
         </Route>
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />

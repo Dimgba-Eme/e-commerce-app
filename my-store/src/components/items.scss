@@ -7,12 +7,19 @@
 .items-container {
 
     .items-inner {
-        
+
         .items-image {
             width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                animation: scaler 0.5s;
+            }
         }
 
-        .items-title {}
+        .items-title {
+            margin-top: 10px;
+        }
 
         .items-new-price {
             margin-top: 10px;
@@ -22,6 +29,16 @@
         .items-old-price {
             color: lighten(black, 50);
             text-decoration: line-through;
+        }
+    }
+
+    @keyframes scaler {
+        from {
+            transform: scale(100%);
+        }
+
+        to {
+            transform: scale(110%);
         }
     }
 }
