@@ -57,6 +57,11 @@
   background-color: #333333;
   color: #fff;
   font-weight: bold;
+  border: 0;
+  cursor: pointer;
+}
+.product-display-container .product-display-inner .product-info-container .add-to-cart-btn button:hover {
+  background-color: #666666;
 }
 @media only screen and (min-width: 1000px) {
   .product-display-container .product-display-inner {

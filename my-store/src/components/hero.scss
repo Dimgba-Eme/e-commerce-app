@@ -37,6 +37,7 @@
             background-color: tomato;
             border: 0;
             border-radius: 10px;
+            cursor: pointer;
         }
     }
 
@@ -80,7 +81,9 @@
                 width: 150px;
                 border: 0;
                 outline: 0;
-
+              &:hover {
+                background-color: lighten(tomato, 10);
+              }
             }
         }
     }

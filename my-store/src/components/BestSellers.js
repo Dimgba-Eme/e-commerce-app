@@ -2,6 +2,7 @@ import React from 'react'
 import './bestSellers.scss'
 
 import best_sellers from '../assets/images/best_sellers'
+import { Link } from 'react-router-dom'
 
 function BestSellers() {
     return (
@@ -17,7 +18,7 @@ function BestSellers() {
 
 
                             <div key={items.id} className='best-sellers-data'>
-                                <img src={items.image} alt='Best sellers products' />
+                                <Link to={`/single-item/${items.id}`}><img src={items.image} alt='Best sellers products' onClick={() => window.scrollTo(0, 0)} /></Link>
                                 <h4>{items.name}</h4>
                                 <p>${items.new_price}</p>
                             </div>

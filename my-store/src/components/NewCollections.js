@@ -1,6 +1,7 @@
 import React from 'react'
 import './newCollections.scss'
 import new_collections from '../assets/images/new_collections'
+import { Link } from 'react-router-dom'
 
 const NewCollections = () => {
     return (
@@ -16,7 +17,7 @@ const NewCollections = () => {
                         return (
 
                             <div key={item.id} className='new-collections-data'>
-                                <img src={item.image} alt='new collections products' />
+                                <Link to={`/single-item/${item.id}`}> <img src={item.image} alt='new collections products' onClick={() => window.scrollTo(0, 0)} /></Link>
                                 <h4>{item.name}</h4>
                                 <p>${item.new_price}</p>
                             </div>

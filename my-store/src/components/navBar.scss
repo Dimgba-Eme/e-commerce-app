@@ -127,6 +127,15 @@
                     text-align: center;
                     text-decoration: none;
                     color: #333333;
+
+                    &:hover {
+                        color: #ccc;
+                    }
+
+                    &:focus {
+                        border-bottom: 4px solid tomato;
+                        padding: 10px;
+                    }
                 }
 
                 .nav-link+.nav-link {

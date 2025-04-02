@@ -21,6 +21,9 @@
   .single-item-container .product-path-container h4 {
     font-size: 20px;
   }
+  .single-item-container .product-path-container img {
+    width: 20px;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .single-item-container {

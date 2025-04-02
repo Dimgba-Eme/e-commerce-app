@@ -22,4 +22,7 @@
   min-width: 100px;
   text-align: center;
   border-radius: 5px;
+}
+.products-tab .products-tab-inner .tab:hover {
+  background-color: #ccc;
 }/*# sourceMappingURL=productsTabs.css.map */

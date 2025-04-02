@@ -1,8 +1,10 @@
 import React from 'react'
 import HeroImage from '../assets/images/hero_image.jpeg'
 import './hero.scss'
+import { useNavigate } from 'react-router-dom'
 
 function Hero() {
+    const redirect = useNavigate();
     return (
         <>
             <section className='hero-container'>
@@ -19,7 +21,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className='btn-container'>
-                    <button className='cta-btn'>SHOP NOW</button>
+                    <button className='cta-btn' onClick={() => redirect('/products')}>SHOP NOW</button>
                 </div>
 
             </section>

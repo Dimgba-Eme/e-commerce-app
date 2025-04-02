@@ -106,6 +106,13 @@
     text-decoration: none;
     color: #333333;
   }
+  .nav-container nav .nav-inner .nav-link:hover {
+    color: #ccc;
+  }
+  .nav-container nav .nav-inner .nav-link:focus {
+    border-bottom: 4px solid tomato;
+    padding: 10px;
+  }
   .nav-container nav .nav-inner .nav-link + .nav-link {
     margin-left: 20px;
   }
