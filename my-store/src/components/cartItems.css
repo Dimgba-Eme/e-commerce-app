@@ -2,4 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.cart-items-container {
+  padding: 20px 10px;
+}
+.cart-items-container h1 {
+  font-size: 20px;
+}
+.cart-items-container .cart-items-inner .cart-items-heading {
+  display: none;
+  justify-content: space-between;
+}
+.cart-items-container .cart-items-inner hr {
+  display: none;
 }/*# sourceMappingURL=cartItems.css.map */

@@ -4,3 +4,26 @@
     box-sizing: border-box;
 }
 
+.cart-items-container {
+    padding: 20px 10px;
+    h1 {
+        font-size: 20px;
+    }
+    .cart-items-inner {
+        .cart-items-heading {
+            display: none;
+            justify-content: space-between;
+
+        }
+
+        hr {
+            display: none;
+        }
+
+        .cart-items-wrapper {
+            // display: grid;
+            // grid-template-columns: repeat(2, auto);
+            
+        }
+    }
+}
