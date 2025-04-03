@@ -27,7 +27,7 @@ const ContextProvider = ({ children }) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] = 0 }))
     }
 
-    const contextValue = { all_products };
+    const contextValue = { all_products, addToCart, removeFromCart, deleteFromCart };
     return (
         <ProductsContext.Provider value={contextValue}>
             {children}
