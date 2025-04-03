@@ -15,7 +15,8 @@ const ContextProvider = ({ children }) => {
 
     const [cartItems, setCartItems] = useState(getDefaultCart())
 
-    const addToCart = () => {
+    const addToCart = (itemId) => {
+        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
     }
 
     const contextValue = { all_products };
