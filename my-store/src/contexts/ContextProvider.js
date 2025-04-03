@@ -27,7 +27,18 @@ const ContextProvider = ({ children }) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] = 0 }))
     }
 
-    const contextValue = { all_products, addToCart, removeFromCart, deleteFromCart };
+    const getTotalCartAmount = () => {
+        let totalAmount = 0;
+        for (const item in cartItems) {
+            if (cartItems[item] > 0) {
+                let itemInfo = all_products.find((e) => e.id === Number(item));
+                totalAmount += itemInfo.new_price * cartItems[item];
+            }
+        }
+        return totalAmount;
+    }
+
+    const contextValue = { all_products, cartItems, addToCart, removeFromCart, deleteFromCart };
     return (
         <ProductsContext.Provider value={contextValue}>
             {children}

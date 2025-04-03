@@ -1,7 +1,9 @@
 import React from 'react'
 import './cartItems.scss'
+import { useProducts } from '../contexts/ContextProvider'
 
 const CartItems = () => {
+    const {all_products, cartItems, addToCart, removeFromCart, deleteFromCart } = useProducts();
     return (
         <section className='cart-items-container'>
             <h1>Shopping Cart</h1>
