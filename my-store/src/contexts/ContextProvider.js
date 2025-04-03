@@ -31,14 +31,24 @@ const ContextProvider = ({ children }) => {
         let totalAmount = 0;
         for (const item in cartItems) {
             if (cartItems[item] > 0) {
-                let itemInfo = all_products.find((e) => e.id === Number(item));
+                let itemInfo = all_products.find((product) => product.id === Number(item));
                 totalAmount += itemInfo.new_price * cartItems[item];
             }
         }
         return totalAmount;
     }
 
-    const contextValue = { all_products, cartItems, addToCart, removeFromCart, deleteFromCart };
+    const getTotalCartItem = () => {
+        let totalItem = 0;
+        for (const item in cartItems) {
+            if (cartItems[item] > 0) {
+                totalItem += cartItems[item];
+            }
+        }
+        return totalItem;
+    }
+
+    const contextValue = { all_products, cartItems, addToCart, removeFromCart, deleteFromCart, getTotalCartAmount, getTotalCartItem };
     return (
         <ProductsContext.Provider value={contextValue}>
             {children}
