@@ -1,4 +1,5 @@
 import React from 'react'
+import './cartItems.scss'
 
 const CartItems = () => {
   return (
