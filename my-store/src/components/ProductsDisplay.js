@@ -1,9 +1,11 @@
 import React from 'react'
 import './productsDisplay.scss'
 import rating from '../assets/icons/rating.png'
+import { useProducts } from '../contexts/ContextProvider'
 
 const ProductsDisplay = (props) => {
   const { product } = props;
+  const { addToCart } = useProducts();
   return (
     <section className='product-display-container'>
       <div className='product-display-inner'>
@@ -44,7 +46,7 @@ const ProductsDisplay = (props) => {
           </div>
 
           <div className='add-to-cart-btn'>
-            <button>ADD TO CART</button>
+            <button onClick={addToCart(product.id)}>ADD TO CART</button>
           </div>
 
         </div>
