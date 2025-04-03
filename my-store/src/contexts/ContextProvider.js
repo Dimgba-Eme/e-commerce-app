@@ -3,7 +3,9 @@ import all_products from '../assets/images/all_products'
 
 const getDefaultCart = () => {
     let cart = {}
-    for (const i = 0; i < cart.length; i++);
+    for (let i = 0; i < all_products.length; i++) {
+        cart[i] = 0;
+    }
     return cart;
 }
 
@@ -12,6 +14,9 @@ const ProductsContext = createContext();
 const ContextProvider = ({ children }) => {
 
     const [cartItems, setCartItems] = useState(getDefaultCart())
+
+    const addToCart = () => {
+    }
 
     const contextValue = { all_products };
     return (
