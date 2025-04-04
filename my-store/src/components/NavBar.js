@@ -5,7 +5,9 @@ import cart_icon from '../assets/icons/cart_icon.png'
 import menu_btn from '../assets/icons/hamburger_menu.svg'
 import close_btn from '../assets/icons/close_icon.png'
 
+import { useProducts } from '../contexts/ContextProvider'
 
+const {getTotalCartItem} = useProducts();
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +31,8 @@ function NavBar() {
                 </nav>
             </div>
             <NavLink to='/cart'><img src={cart_icon} alt='cart icon' className='cart-icon' /></NavLink>
+            <span className='cart-item-count-container'><p className='cart-item-count'>0</p></span>
+            
         </>
     )
 }

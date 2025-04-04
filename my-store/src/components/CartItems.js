@@ -76,7 +76,7 @@ const CartItems = () => {
                     <hr />
 
                     <div className='shipping-container'>
-                        <p>Shipping</p>
+                        <p>Shipping Fee</p>
                         <p>Free</p>
                     </div>
                     <hr />
