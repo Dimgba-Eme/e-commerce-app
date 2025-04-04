@@ -6,24 +6,91 @@
 
 .cart-items-container {
     padding: 20px 10px;
+
     h1 {
         font-size: 20px;
     }
+
     .cart-items-inner {
         .cart-items-heading {
             display: none;
             justify-content: space-between;
-
-        }
-
-        hr {
-            display: none;
         }
 
         .cart-items-wrapper {
-            // display: grid;
-            // grid-template-columns: repeat(2, auto);
-            
+            .items-inner {
+                display: flex;
+                padding: 20px 0;
+                gap: 30px;
+
+                .cart-product-image {
+                    width: 50px;
+                }
+
+                .item-info-container {
+                    .item-btn-price-container {
+                        display: flex;
+                        margin-top: 10px;
+                        gap: 30px;
+
+                        .item-price-container {
+                            display: none;
+                        }
+
+                        .item-btn-container {
+                            img {
+                                width: 10px;
+
+                            }
+
+                            button {
+                                padding: 5px;
+                                height: 30px;
+                                width: 30px;
+
+                            }
+                        }
+                    }
+
+                    .trash-icon {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .totals-container {
+        padding: 20px 0;
+        .totals-inner {
+
+            .subtotal-container {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+            }
+
+            .shipping-container {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+            }
+
+            .total-amount-container {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+            }
+        }
+
+        .checkout-btn {
+            padding: 15px;
+            margin-top: 30px;
+            background-color: tomato;
+            color: #fff;
+            font-weight: bold;
+            border: 0;
         }
     }
 }
