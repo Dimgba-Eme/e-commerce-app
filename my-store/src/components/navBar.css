@@ -75,7 +75,7 @@
   height: 20px;
   width: 20px;
   margin-left: -20px;
-  margin-top: -13px;
+  margin-top: -10px;
   text-align: center;
 }
 
@@ -135,5 +135,8 @@
     width: 30px;
     height: 30px;
     margin-left: auto;
+  }
+  .cart-item-count-container .cart-item-count {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=navBar.css.map */
