@@ -4,29 +4,29 @@
   box-sizing: border-box;
 }
 
-.totals-container .totals-inner {
+.order-container .order-inner .totals-container .totals-inner {
   margin-top: 100px;
 }
-.totals-container .totals-inner .subtotal-container {
+.order-container .order-inner .totals-container .totals-inner .subtotal-container {
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
 }
-.totals-container .totals-inner .shipping-container {
+.order-container .order-inner .totals-container .totals-inner .shipping-container {
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
 }
-.totals-container .totals-inner .total-amount-container {
+.order-container .order-inner .totals-container .totals-inner .total-amount-container {
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
 }
-.totals-container .checkout-btn {
+.order-container .order-inner .totals-container .checkout-btn {
   padding: 15px;
   margin-top: 30px;
   background-color: tomato;
@@ -35,6 +35,6 @@
   border: 0;
   cursor: pointer;
 }
-.totals-container .checkout-btn:hover {
+.order-container .order-inner .totals-container .checkout-btn:hover {
   background-color: #ff8e7a;
 }/*# sourceMappingURL=placeOrder.css.map */

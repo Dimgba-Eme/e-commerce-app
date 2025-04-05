@@ -15,16 +15,44 @@ const PlaceOrder = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        clearForm();
+        alert("Order placed!")
+    }
+
+    const clearForm = () => {
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setStreet("");
+        setCity("");
+        setState("");
+        setZipcode("");
+        setCountry("");
+        setPhone("");
     }
 
     const { getTotalCartAmount } = useProducts();
+
     return (
         <section className='order-container'>
             <h1>Delivery Information</h1>
             <div className='order-inner'>
                 <div className='delivery-info'>
-                    <form>
-
+                    <form onSubmit={handleSubmit}>
+                        <input type='text' id='first-name' placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+                        <input type='text' id='last-name' placeholder='Last name' value={lastName} onChange={(e) => setLastName(e.target.value)} required />
+                        <br />
+                        <input type='email' id='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required />
+                        <br />
+                        <input type='text' id='street' placeholder='Street' value={street} onChange={(e) => setStreet(e.target.value)} required />
+                        <br />
+                        <input type='text' id='city' placeholder='City' value={city} onChange={(e) => setCity(e.target.value)} required />
+                        <input type='text' id='state' placeholder='State' value={state} onChange={(e) => setState(e.target.value)} required />
+                        <br />
+                        <input type='number' id='zipcode' placeholder='Zipcode' value={zipcode} onChange={(e) => setZipcode(e.target.value)} required />
+                        <input type='text' id='country' placeholder='Country' value={country} onChange={(e) => setCountry(e.target.value)} required />
+                        <br />
+                        <input type='tel' id='phone' placeholder='Phone' value={phone} onChange={(e) => setPhone(e.target.value)} required />
                     </form>
                 </div>
 
