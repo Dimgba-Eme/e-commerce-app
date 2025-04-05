@@ -3,15 +3,19 @@ import './placeOrder.scss'
 import { useProducts } from '../contexts/ContextProvider'
 
 const PlaceOrder = () => {
-    const [firstName, setFirstName] = useState();
-    const [lastName, setLastName] = useState();
-    const [email, setEmail] = useState();
-    const [street, setStreet] = useState();
-    const [city, setCity] = useState();
-    const [state, setState] = useState();
-    const [zipcode, setZipcode] = useState();
-    const [country, setCountry] = useState();
-    const [phone, setPhone] = useState();
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [street, setStreet] = useState("");
+    const [city, setCity] = useState("");
+    const [state, setState] = useState("");
+    const [zipcode, setZipcode] = useState("");
+    const [country, setCountry] = useState("");
+    const [phone, setPhone] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
 
     const { getTotalCartAmount } = useProducts();
     return (
