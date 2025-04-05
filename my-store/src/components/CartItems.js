@@ -4,9 +4,11 @@ import trash_icon from '../assets/icons/trash_icon.png'
 import minus_icon from '../assets/icons/minus.png'
 import plus_icon from '../assets/icons/plus.png'
 import { useProducts } from '../contexts/ContextProvider'
+import { useNavigate } from 'react-router-dom'
 
 const CartItems = () => {
     const { all_products, cartItems, addToCart, removeFromCart, deleteFromCart, getTotalCartAmount } = useProducts();
+    const redirect = useNavigate();
     return (
         <section className='cart-items-container'>
             <h1>Shopping Cart</h1>
@@ -54,7 +56,7 @@ const CartItems = () => {
                         <h3>${getTotalCartAmount()}</h3>
                     </div>
                 </div>
-                <button className='checkout-btn'>PROCEED TO CHECKOUT</button>
+                <button className='checkout-btn' onClick={() => redirect('/cart/place-order')}>PROCEED TO CHECKOUT</button>
             </div>
 
 
