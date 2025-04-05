@@ -30,22 +30,9 @@ const CartItems = () => {
                                     <img src={trash_icon} alt='trash icon' className='trash-icon' onClick={() => deleteFromCart(item.id)} />
                                 </div>
                             </div>
-
-
-
-
-
-
-
-
-
-
-
                         )
                     }
                 })}
-
-
             </div>
 
             <div className='totals-container'>
