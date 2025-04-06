@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './placeOrder.scss'
 import { useProducts } from '../contexts/ContextProvider'
 import { validateEmail } from './utils'
+import paypal_logo from '../assets/icons/paypal.png'
+import stripe_logo from '../assets/icons/stripe_logo.png'
 
 const PlaceOrder = () => {
     const [firstName, setFirstName] = useState("")
