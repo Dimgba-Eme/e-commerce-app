@@ -12,7 +12,7 @@ const SingleItem = () => {
     return (
         <main className='single-item-container'>
             <div className='product-path-container'>
-            <h4>Products <span><img src={arrow_right} /></span><Link to={`/products/${product.category}`}>{product.category}</Link><span><img src={arrow_right} /></span>{product.name}</h4>
+            <h4>Products <span><img src={arrow_right} alt='arrow right' /></span><Link to={`/products/${product.category}`}>{product.category}</Link><span><img src={arrow_right} alt='arrow right' /></span>{product.name}</h4>
             </div>
 
             <ProductsDisplay product={product} />

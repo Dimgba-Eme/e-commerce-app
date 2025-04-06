@@ -33,7 +33,7 @@ const Newsletter = () => {
 
             <div className='input-container'>
                 <form onSubmit={handleSubmit}>
-                    <input type='email' placeholder='Enter your email' id='email' value={email} onChange={e => setEmail(e.target.value)} onBlur={e => setEmail(e.target.value)} />
+                    <input type='email' placeholder='Enter your email' id='email' value={email} onChange={e => setEmail(e.target.value)} />
                     <button type='submit' disabled={!getIsFormValid()}>Subscribe</button>
                 </form>
             </div>

@@ -19,20 +19,22 @@ const CartItems = () => {
                         return (
                             <div key={item.id} className='items-wrapper'>
                                 <div className='items-inner'>
-                                    <img src={item.image} alt='cart product image' className='product-image' />
+                                    <img src={item.image} alt='cart product pic' className='product-image' />
                                     <h4 className='item-name'>{item.name}</h4>
                                     <p className='item-price'>${item.new_price}</p>
 
                                     <div className='item-btn-container'>
-                                        <button onClick={() => removeFromCart(item.id)}><img src={minus_icon} /></button>
+                                        <button onClick={() => removeFromCart(item.id)}><img src={minus_icon} alt='' /></button>
                                         <button>{cartItems[item.id]}</button>
-                                        <button onClick={() => addToCart(item.id)}><img src={plus_icon} /></button>
+                                        <button onClick={() => addToCart(item.id)}><img src={plus_icon} alt='' /></button>
                                     </div>
                                     <h4 className='total-price'>${cartItems[item.id] * item.new_price}</h4>
                                     <img src={trash_icon} alt='trash icon' className='trash-icon' onClick={() => deleteFromCart(item.id)} />
                                 </div>
                             </div>
                         )
+                    } else {
+                        return null;
                     }
                 })}
             </div>

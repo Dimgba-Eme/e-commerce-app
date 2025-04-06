@@ -5,55 +5,134 @@
 }
 
 .order-container {
-    h1 {}
+    padding: 20px 10px;
 
-    .order-inner {
+    h1 {
+        font-size: 20px;
+    }
 
-        .delivery-info {}
+    form {
 
+        .form-inner {
 
-        .totals-container {
-            .totals-inner {
-                margin-top: 100px;
-
-                .subtotal-container {
+            .delivery-info {
+                .first-last-container {
                     display: flex;
-                    justify-content: space-between;
-                    margin: 15px 0;
-                    border-bottom: 1px solid #ccc;
-                    padding: 10px 0;
+                    gap: 10px;
                 }
 
-                .shipping-container {
+                .city-state-container {
                     display: flex;
-                    justify-content: space-between;
-                    margin: 15px 0;
-                    border-bottom: 1px solid #ccc;
-                    padding: 10px 0;
+                    gap: 10px;
                 }
 
-                .total-amount-container {
+                .zipcode-country-container {
                     display: flex;
-                    justify-content: space-between;
-                    margin: 15px 0;
+                    gap: 10px;
+                }
+
+                input {
+                    width: 100%;
+                    margin-top: 10px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 0.5px solid #ccc;
                 }
             }
 
-            .checkout-btn {
-                padding: 15px;
-                margin-top: 30px;
-                background-color: tomato;
-                color: #fff;
-                font-weight: bold;
-                border: 0;
-                cursor: pointer;
+            .totals-container {
+                .totals-inner {
+                    margin-top: 100px;
 
-                &:hover {
-                    background-color: lighten(tomato, 10);
+                    .subtotal-container {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 15px 0;
+                        border-bottom: 1px solid #ccc;
+                        padding: 10px 0;
+                    }
+
+                    .shipping-container {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 15px 0;
+                        border-bottom: 1px solid #ccc;
+                        padding: 10px 0;
+                    }
+
+                    .total-amount-container {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 15px 0;
+                    }
+                }
+
+                .payment-gateway-container {
+                    padding: 30px 0;
+                    
+                    .cash-payment {
+                        margin-top: 20px;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+
+                        span {
+                            margin-left: 15px;
+                        }
+                        
+                    }
+                }
+
+                // .checkout-btn {
+                //     padding: 15px;
+                //     margin-top: 30px;
+                //     background-color: tomato;
+                //     color: #fff;
+                //     font-weight: bold;
+                //     border: 0;
+                //     cursor: pointer;
+
+                //     &:hover {
+                //         background-color: lighten(tomato, 10);
+                //     }
+                // }
+
+
+            }
+        }
+    }
+
+    @media only screen and (min-width: 800px) {
+        padding: 20px 50px;
+
+        form {
+            .form-inner {
+                display: flex;
+                justify-content: space-between;
+
+                .totals-container {
+                    width: 40%;
+
+                    .totals-inner {
+                        margin-top: 0;
+                    }
                 }
             }
+        }
+    }
 
 
+    @media only screen and (min-width: 1000px) {
+        padding: 20px 100px;
+
+        form {
+            .form-inner {
+                .delivery-info {
+                    input {
+                        width: 100%;
+                        padding: 15px;
+                    }
+                }
+            }
         }
     }
 }
