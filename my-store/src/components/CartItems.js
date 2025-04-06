@@ -58,7 +58,7 @@ const CartItems = () => {
                         <h3>${getTotalCartAmount()}</h3>
                     </div>
                 </div>
-                <button className='checkout-btn' onClick={() => redirect('/cart/place-order')}>PROCEED TO CHECKOUT</button>
+                <button className='checkout-btn' onClick={() => redirect('/cart/place-order', window.scrollTo(0, 0))}>PROCEED TO CHECKOUT</button>
             </div>
 
 

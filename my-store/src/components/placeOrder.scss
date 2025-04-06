@@ -69,34 +69,47 @@
 
                 .payment-gateway-container {
                     padding: 30px 0;
-                    
-                    .cash-payment {
-                        margin-top: 20px;
-                        padding: 10px;
-                        border: 1px solid #ccc;
+
+                    .payment-container {
+                        margin-top: 10px;
+
+                        .options {
+                            margin-top: 10px;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                        }
 
                         span {
-                            margin-left: 15px;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 30px;
+
+                            img {
+                                width: 40px;
+                            }
                         }
-                        
+
                     }
                 }
+            }
+        }
 
-                // .checkout-btn {
-                //     padding: 15px;
-                //     margin-top: 30px;
-                //     background-color: tomato;
-                //     color: #fff;
-                //     font-weight: bold;
-                //     border: 0;
-                //     cursor: pointer;
+        .pay-btn {
+            padding: 15px;
+            margin-top: 30px;
+            background-color: tomato;
+            color: #fff;
+            font-weight: bold;
+            border: 0;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 200px;
+            font-size: 15px;
 
-                //     &:hover {
-                //         background-color: lighten(tomato, 10);
-                //     }
-                // }
-
-
+            &:hover {
+                background-color: lighten(tomato, 10);
             }
         }
     }
@@ -116,6 +129,14 @@
                         margin-top: 0;
                     }
                 }
+            }
+
+            .pay-btn {
+                display: flex;
+               margin-left: auto;
+               position: relative;
+               justify-content: center;
+               align-items: center;
             }
         }
     }

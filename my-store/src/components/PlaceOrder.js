@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './placeOrder.scss'
 import { useProducts } from '../contexts/ContextProvider'
 import { validateEmail } from './utils'
-import paypal_logo from '../assets/icons/paypal.png'
 import stripe_logo from '../assets/icons/stripe_logo.png'
 
 const PlaceOrder = () => {
@@ -122,16 +121,22 @@ const PlaceOrder = () => {
                         <div className='payment-gateway-container'>
                             <h3>Payment Method</h3>
 
-                            <div className='cash-payment'>
-                                <input type='radio' id='cash'  /><span>Cash On Delivery</span>
-                                <input type='radio' id='cash'  /><span>Cash On Delivery</span>
-                                <input type='radio' id='cash' checked /><span>Cash On Delivery</span>
+                            <div className='payment-container'>
+                                <div className='cash-payment options'>
+                                    <input type='radio' id='cash' name='cash'/><span>Cash On Delivery</span>
+                                </div>
+
+                                <div className='stripe-payment options'>
+                                    <input type='radio' id='stripe' name='stripe'/><span><img src={stripe_logo} alt='' /></span>
+                                </div>
                             </div>
+
+
 
                         </div>
                     </div>
                 </div>
-                    <button disabled={!isFormValid()}>Place Order</button>
+                <button type='submit' className='pay-btn' disabled={!isFormValid()}>Place Order</button>
             </form>
         </section>
     )
