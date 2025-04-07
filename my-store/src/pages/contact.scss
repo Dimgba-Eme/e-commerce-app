@@ -3,3 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.contact-wrapper {
+    padding: 20px 10px;
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .contact-inner {
+        img {
+            width: 100%;
+        }
+
+        .contact-info {
+            p {
+                color: lighten(black, 40);
+            }
+        }
+    }
+}
