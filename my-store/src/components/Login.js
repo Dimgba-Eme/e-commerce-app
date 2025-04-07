@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './login.scss'
+import { validateEmail } from './utils';
 
 const Login = () => {
     const [email, setEmail] = useState();
