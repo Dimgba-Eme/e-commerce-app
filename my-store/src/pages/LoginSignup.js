@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Login from '../components/Login'
 import Signup from '../components/Signup'
 
 const LoginSignup = () => {
+  const [login] = useState(true);
   return (
     <main className='login-signup-container'>
-      {/* <Login /> */}
-      <Signup />
+      {login ? (<Login />) : (<Signup />)}
+
+
     </main>
   )
 }

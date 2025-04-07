@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './signup.scss'
 import { validateEmail } from './utils';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const PasswordErrorMessage = () => {
@@ -19,7 +20,7 @@ const Signup = () => {
 
     const isFormValid = () => {
         return (
-           name && email && validateEmail(email) && password.value.length >= 8
+            name && email && validateEmail(email) && password.value.length >= 8
         )
     }
 
@@ -45,6 +46,8 @@ const Signup = () => {
         inputRef.current.focus();
     }, [])
 
+    const redirect = useNavigate();
+
     return (
         <section className='signup-container'>
             <h1>Sign Up</h1>
@@ -60,7 +63,7 @@ const Signup = () => {
                     <button type='submit' disabled={!isFormValid()}>Sign Up</button>
                     <div>
                         <p>Forgot password?</p>
-                        <p>Already have an account? Login here</p>
+                        <p onClick={() => redirect(- 1)} className='login-redirect'>Already have an account? Login here</p>
                     </div>
                 </form>
             </div>

@@ -36,17 +36,14 @@
 .signup-container .signup-inner form button:hover {
   background-color: #666666;
 }
+.signup-container .signup-inner form .login-redirect {
+  color: #333333;
+  text-decoration: underline;
+  cursor: pointer;
+}
 @media only screen and (min-width: 800px) {
-  .signup-container .signup-inner {
-    margin: 0 150px;
-  }
   .signup-container .signup-inner form input {
     padding: 15px;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .signup-container .signup-inner {
-    margin: 0 350px;
+    width: 450px;
   }
 }/*# sourceMappingURL=signup.css.map */

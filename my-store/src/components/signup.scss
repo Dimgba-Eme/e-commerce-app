@@ -40,25 +40,23 @@
                     background-color: lighten(black, 40);
                 }
             }
+
+            .login-redirect {
+                color: lighten(black, 20);
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
     }
 
     @media only screen and (min-width: 800px) {
         .signup-inner {
-            margin: 0 150px;
-
             form {
                 input {
                     padding: 15px;
-                    width: 100%;
+                    width: 450px;
                 }
             }
-        }
-    }
-
-    @media only screen and (min-width: 1000px) {
-        .signup-inner {
-            margin: 0 350px;
         }
     }
 }

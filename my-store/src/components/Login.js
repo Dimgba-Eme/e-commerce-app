@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './login.scss'
 import { validateEmail } from './utils';
-
+import { Link } from 'react-router-dom';
 const PasswordErrorMessage = () => {
     return (
         <p style={{ color: 'red' }}>Password must not be less than eight characters!</p>
@@ -55,7 +55,7 @@ const Login = () => {
                     <button type='submit' disabled={!isFormValid()}>Sign In</button>
                     <div>
                         <p>Forgot password?</p>
-                        <p>Don't have and account? Sign up here</p>
+                        <Link to='/login-signup/signup'><p>Don't have and account? Sign up here</p></Link>
                     </div>
                 </form>
             </div>
