@@ -4,7 +4,7 @@ import { validateEmail } from './utils';
 
 const PasswordErrorMessage = () => {
     return (
-        <p style={{ color: 'red' }}>Password must not be less eight characters</p>
+        <p style={{ color: 'red' }}>Password must not be less than eight characters!</p>
     )
 }
 
@@ -34,16 +34,17 @@ const Login = () => {
             isFocused: false,
         })
     }
-    
+
     const inputRef = useRef();
 
     useEffect(() => {
         document.title = "Login | Dimmy's Store"
         inputRef.current.focus();
-    })
+    }, [])
 
     return (
         <section className='login-container'>
+            <h1>Login</h1>
             <div className='login-inner'>
                 <form onSubmit={handleSubmit}>
                     <input type='email' ref={inputRef} id='email' placeholder='Enter email' value={email} onChange={(e) => setEmail(e.target.value)} />
