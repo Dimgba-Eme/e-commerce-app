@@ -3,9 +3,10 @@ import Login from '../components/Login'
 
 const LoginSignup = () => {
   return (
-    <div>
+    <main className='login-signup-container'>
       <h1>Login</h1>
-    </div>
+      <Login />
+    </main>
   )
 }
 
