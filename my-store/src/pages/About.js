@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './about.scss'
 import about_hero from '../assets/images/about_hero.png'
 import Newsletter from '../components/Newsletter'
+
+
 const About = () => {
+
+  useEffect(() => {
+    document.title = "About | Dimmy's Store"
+  })
+  
   return (
     <main className='about-wrapper'>
 
@@ -45,7 +52,7 @@ const About = () => {
           </div>
         </div>
       </div>
-        <Newsletter />
+      <Newsletter />
     </main>
   )
 }

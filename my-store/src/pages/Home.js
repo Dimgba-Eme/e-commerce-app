@@ -8,7 +8,7 @@ import Newsletter from '../components/Newsletter'
 const Home = () => {
 
     useEffect(() => {
-        document.title = "Home | Dimmy's store"
+        document.title = "Home | Dimmy's Store"
     }, [])
 
     return (

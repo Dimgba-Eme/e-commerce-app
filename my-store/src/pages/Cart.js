@@ -4,7 +4,7 @@ import CartItems from '../components/CartItems'
 const Cart = () => {
 
   useEffect(() => {
-    document.title = "Cart | Dimmy's store"
+    document.title = "Cart | Dimmy's Store"
   }, [])
   return (
     <main>
