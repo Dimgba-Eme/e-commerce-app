@@ -36,4 +36,31 @@
 .about-wrapper .about-container .why-choose-container .why-us {
   border: 1px solid #ccc;
   padding: 30px;
+}
+@media only screen and (min-width: 800px) {
+  .about-wrapper {
+    padding: 20px 50px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .about-wrapper {
+    padding: 20px 100px;
+  }
+  .about-wrapper .about-container h1 {
+    font-size: 40px;
+  }
+  .about-wrapper .about-container .about-inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .about-wrapper .about-container .about-inner img {
+    width: 50%;
+  }
+  .about-wrapper .about-container .why-choose-container {
+    display: flex;
+  }
+  .about-wrapper .about-container .why-choose-container .why-us {
+    padding: 50px;
+  }
 }/*# sourceMappingURL=about.css.map */

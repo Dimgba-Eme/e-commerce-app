@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
 .about-wrapper {
-
-
     .about-container {
         padding: 20px 10px;
 
@@ -48,6 +48,38 @@
             .why-us {
                 border: 1px solid #ccc;
                 padding: 30px;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 800px) {
+        padding: 20px 50px;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        padding: 20px 100px;
+
+        .about-container {
+            h1 {
+                font-size: 40px;
+            }
+
+            .about-inner {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .why-choose-container {
+                display: flex;
+    
+                .why-us {
+                    padding: 50px;
+                }
             }
         }
     }
