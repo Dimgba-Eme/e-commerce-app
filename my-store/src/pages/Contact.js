@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './contact.scss'
 import contact_us from '../assets/images/contact_us.png'
 import Newsletter from '../components/Newsletter'
 
 const Contact = () => {
+
+  useEffect(() => {
+    document.title = "Contact | Dimmy's Store"
+  })
   return (
     <main className='contact-wrapper'>
       <h1>Contact Us</h1>

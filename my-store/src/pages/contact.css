@@ -16,4 +16,25 @@
 }
 .contact-wrapper .contact-inner .contact-info p {
   color: #666666;
+}
+@media only screen and (min-width: 800px) {
+  .contact-wrapper {
+    padding: 20px 50px;
+  }
+  .contact-wrapper .contact-inner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .contact-wrapper .contact-inner img {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact-wrapper {
+    padding: 20px 100px;
+  }
+  .contact-wrapper h1 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=contact.css.map */

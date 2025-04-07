@@ -23,4 +23,26 @@
             }
         }
     }
+
+    @media only screen and (min-width: 800px) {
+        padding: 20px 50px;
+
+        .contact-inner {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        padding: 20px 100px;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
 }
