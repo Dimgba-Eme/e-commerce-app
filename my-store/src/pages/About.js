@@ -1,10 +1,14 @@
 import React from 'react'
+import './about.scss'
 
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <main className='about-container'>
+      <h1>About Us</h1>
+      <div className='about-inner'>
+         <img />
+      </div>
+    </main>
   )
 }
 
