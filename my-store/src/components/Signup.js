@@ -62,7 +62,6 @@ const Signup = () => {
                     <br />
                     <button type='submit' disabled={!isFormValid()}>Sign Up</button>
                     <div>
-                        <p>Forgot password?</p>
                         <p onClick={() => redirect(- 1)} className='login-redirect'>Already have an account? Login here</p>
                     </div>
                 </form>

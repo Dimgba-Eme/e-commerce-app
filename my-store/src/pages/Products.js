@@ -12,6 +12,7 @@ const Products = () => {
   return (
     <main className='products-container'>
       <h1>Our Products</h1>
+      <p>Click to view</p>
       <ProductsTabs />
 
 
