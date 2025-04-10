@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './signup.scss'
 import { validateEmail } from './utils';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const PasswordErrorMessage = () => {
@@ -57,7 +57,7 @@ const Signup = () => {
                     <br />
                     <input type='email' id='email' placeholder='Enter email' value={email} onChange={(e) => setEmail(e.target.value)} />
                     <br />
-                    <input type='password' id='pass' placeholder='Enter password' value={password.value} onChange={(e) => setPassword({ ...password, value: e.target.value })} onBlur={(e) => setPassword({ ...password, isFocused: true })} />
+                    <input type='password' id='pass' placeholder='Enter password' value={password.value} onChange={(e) => setPassword({ ...password, value: e.target.value })} onBlur={() => setPassword({ ...password, isFocused: true })} />
                     {password.isFocused && password.value.length < 8 ? (<PasswordErrorMessage />) : null}
                     <br />
                     <button type='submit' disabled={!isFormValid()}>Sign Up</button>

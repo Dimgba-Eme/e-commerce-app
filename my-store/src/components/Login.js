@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './login.scss'
 import { validateEmail } from './utils';
 import { Link } from 'react-router-dom';
+
 const PasswordErrorMessage = () => {
     return (
         <p style={{ color: 'red' }}>Password must not be less than eight characters!</p>

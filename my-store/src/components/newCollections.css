@@ -65,7 +65,7 @@
   cursor: pointer;
 }
 .new-collections-container .new-collections-data-container .new-collections-data img:hover {
-  animation: scaler 0.5s;
+  animation: scaly 0.5s;
 }
 .new-collections-container .new-collections-data-container .new-collections-data h4 {
   padding: 10px 0;
@@ -80,11 +80,11 @@
     padding: 40px 0;
   }
 }
-@keyframes scaler {
+@keyframes scaly {
   from {
-    transform: scale(100%);
+    transform: scale(1);
   }
   to {
-    transform: scale(110%);
+    transform: scale(1.1);
   }
 }/*# sourceMappingURL=newCollections.css.map */

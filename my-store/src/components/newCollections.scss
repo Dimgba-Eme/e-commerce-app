@@ -78,7 +78,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    animation: scaler 0.5s;
+                    animation: scaly 0.5s;
                 }
             }
 
@@ -99,13 +99,13 @@
 
     }
 
-    @keyframes scaler {
+    @keyframes scaly {
         from {
-            transform: scale(100%);
+            transform: scale(1);
         }
 
         to {
-            transform: scale(110%);
+            transform: scale(1.1);
         }
     }
 }
