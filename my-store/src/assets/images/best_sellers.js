@@ -20,6 +20,7 @@ let best_sellers = [
         new_price: 40.00,
         category: 'hoodie',
     },
+
     {
         id: 28,
         name: 'GURUNVANI Pullover Hoodie',
@@ -28,6 +29,7 @@ let best_sellers = [
         new_price: 120.00,
         category: 'hoodie',
     },
+
     {
         id: 18,
         name: 'GURUNVANI Pullover Hoodie',
@@ -36,6 +38,7 @@ let best_sellers = [
         new_price: 65.00,
         category: 'hoodie',
     },
+
     {
         id: 48,
         name: 'Faith Christian Shirt',
@@ -44,6 +47,7 @@ let best_sellers = [
         new_price: 45.00,
         category: 't-shirt',
     },
+
     {
         id: 51,
         name: 'Rose Round Neck Short Sleeve',
@@ -52,6 +56,7 @@ let best_sellers = [
         new_price: 70.00,
         category: 't-shirt',
     },
+
     {
         id: 55,
         name: 'CHOK_LIDS Everyday Premium Dad Hat',
@@ -60,6 +65,7 @@ let best_sellers = [
         new_price: 40.00,
         category: 'headwear',
     },
+
     {
         id: 70,
         name: 'Unisex Snapback Baseball Cap',
@@ -68,6 +74,7 @@ let best_sellers = [
         new_price: 45.00,
         category: 'headwear',
     },
+
     {
         id: 87,
         name: 'High Top Leather Motorcycle Ankle Boots',
@@ -76,6 +83,7 @@ let best_sellers = [
         new_price: 90.00,
         category: 'footwear',
     },
+
     {
         id: 88,
         name: 'Fashion Colorblock Lace-up Sneakers',
@@ -84,6 +92,7 @@ let best_sellers = [
         new_price: 100.00,
         category: 'footwear',
     },
+
     {
         id: 95,
         name: 'Casual & Fashion Sneaker Shoes For Men',
@@ -92,6 +101,7 @@ let best_sellers = [
         new_price: 85.00,
         category: 'footwear',
     },
+
     {
         id: 85,
         name: 'Moccasin Glitter Male Footwear',
@@ -100,6 +110,7 @@ let best_sellers = [
         new_price: 65.00,
         category: 'footwear',
     },
+    
     {
         id: 40,
         name: 'Men Green Striped Short Sleeve',
